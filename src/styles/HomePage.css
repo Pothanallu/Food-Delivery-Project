@@ -1,0 +1,117 @@
+/* Scrollable Cuisine Section */
+.scroll-container {
+  width: 100%;
+  padding: 30px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Set background to pure white */
+  border: 1px solid #ccc; /* Add border to the entire container */
+  border-radius: 8px; /* Rounded corners for the overall container */
+}
+
+.cuisine-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  position: relative; /* Set position for absolute children */
+  width: 100%;
+  height: 300px; /* Height to fit items comfortably */
+  overflow: hidden; /* Hide overflowing items */
+}
+
+.scroll-items {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: flex-start; /* Align items to the start */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  width: 100%; /* Full width of the container */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.scroll-items::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+/* Style for each scroll item */
+.scroll-item {
+  flex: 0 0 auto; /* Prevent item from shrinking */
+  width: 180px; /* Fixed width of each item for consistency */
+  height: 100%; /* Set height to match the scroll wrapper */
+  margin-right: 10px; /* Right margin between items */
+  text-align: center; /* Center text */
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc; /* Add border to each item */
+  border-radius: 8px; /* Rounded corners for items */
+  padding: 10px; /* Padding inside items */
+  box-sizing: border-box; /* Include padding and border in width/height */
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: space-between; /* Space out items vertically */
+}
+
+.scroll-item img {
+  width: 100%; /* Image fills the item width */
+  height: 100px; /* Fixed height for images */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.scroll-item p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Set font size for better readability */
+  margin-top: 10px; /* Margin for spacing below the image */
+  max-height: 50px; /* Limit height for item name */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Style for the Link component to make it a black hyperlink */
+.scroll-item a {
+  color: black; /* Set text color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+.scroll-item a:hover {
+  color: #333; /* Darker shade of black on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Scroll Buttons */
+.scroll-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent button */
+  border: none; /* No border */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px; /* Button padding */
+  position: absolute; /* Position relative to the scroll wrapper */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  z-index: 1; /* Ensure buttons are above other elements */
+}
+
+.scroll-button.left {
+  left: 10px; /* Position for left button */
+}
+
+.scroll-button.right {
+  right: 10px; /* Position for right button */
+}
+
+/* Popular Cuisines Section Styles */
+.popular-cuisines {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}

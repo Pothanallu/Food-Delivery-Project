@@ -1,0 +1,78 @@
+/* app.css */
+
+/* General container and typography settings */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.container h1 {
+  font-size: 2.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for each section */
+.container section {
+  margin: 30px 0;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Section titles for specific parts of the page */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Layout for Restaurant List, Featured Dishes, and Nearby Restaurants */
+.side-by-side-container {
+  display: flex;
+  justify-content: space-between; /* Space between the items */
+  align-items: flex-start; /* Align items at the top of the container */
+  margin-bottom: 40px;
+}
+
+/* Ensure each section takes up equal space */
+.restaurant-list, .featured-dishes, .nearby-restaurants {
+  flex: 1;
+  min-width: 300px;
+  margin: 0 10px; /* Space between sections */
+}
+
+/* Remove individual card styles and hover effects */
+.restaurant-card, .dish-card, .nearby-restaurant-card {
+  padding: 15px;
+  background-color: white;
+  border: none;
+  box-sizing: border-box;
+}
+
+.restaurant-card h3, .dish-card h3, .nearby-restaurant-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.restaurant-card p, .dish-card p, .nearby-restaurant-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff6600;
+}

@@ -1,0 +1,60 @@
+/* src/components/DishesMenu.css */
+
+.dishes-menu {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.menu-header {
+  font-size: 1.8em;
+  margin-bottom: 16px;
+}
+
+.dishes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dish-details {
+  flex-grow: 1;
+}
+
+.dish-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.dish-description {
+  color: #555;
+}
+
+.dish-price {
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

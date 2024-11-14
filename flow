@@ -1,0 +1,25 @@
+/your-project-folder
+  ├── /public
+  │   ├── index.html
+  ├── /src
+  │   ├── main.jsx
+  │   ├── App.jsx
+  │   ├── /components
+  │   │   ├── DishesMenu.jsx
+  │   │   ├── RestaurantCard.jsx
+  │   │   └── RestaurantList.jsx
+  |   |   |_Cart.jsx
+  |   |   |_navbar.jsx
+  │   ├── /contexts
+  │   │   └── RestaurantContext.jsx
+  |   |_/styles
+  │   │   ├── DishesMenu.css
+  │   │   ├── RestaurantCard.css
+  │   │   └── RestaurantList.css
+  |   |   |_Cart.css
+  |   |   |_navbar.css
+  │   ├── App.css
+  │   ├── App.jsx
+  │   ├── main.css
+  │   ├── main.jsx
+  └── package.json

@@ -1,0 +1,134 @@
+/* Navbar Styling */
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #2c3e50; /* Dark background for contrast */
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Keep navbar on top */
+}
+
+/* Avoid content hiding under navbar */
+.container {
+  padding-top: 70px;
+}
+
+/* Brand Styling */
+.navbar-brand h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Clean, modern font */
+  font-size: 2rem; /* Slightly larger size for prominence */
+  font-weight: 700; /* Bold for emphasis */
+  margin: 0;
+  color: #f8c806; /* Bright, warm yellow for high visibility */
+  letter-spacing: 2px; /* Space between letters for clarity */
+  text-transform: uppercase; /* Uppercase letters for a more formal, strong look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for clarity */
+  transition: transform 0.3s ease-in-out, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for brand title */
+.navbar-brand h2:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+  color: #f39c12; /* Change to a deeper yellow/orange shade on hover */
+}
+
+/* Navbar Links Styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.navbar-links .active {
+  font-weight: bold;
+  color: #f39c12; /* Active link color */
+  border-bottom: 2px solid #f39c12; /* Underline effect */
+}
+
+/* Search Bar Styling */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1; /* Flex-grow to fill space */
+  justify-content: flex-start;
+  margin-left: 150px; /* Add left margin to move search bar right */
+}
+
+.search-input {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 250px;
+  transition: border-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #f39c12; /* Focus border color */
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Space between search input and button */
+}
+
+.search-button:hover {
+  background-color: #e67e22; /* Hover effect for button */
+}
+/* Login Button Styling */
+.login-button1 {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-left: 100px; /* Space between search input and button */
+}
+
+.login-button1:hover {
+  background-color: #e67e22;
+}
+
+/* Active state for login button, if needed */
+.login-button1.active {
+  font-weight: bold;
+  color: #f39c12;
+  border-bottom: 2px solid #f39c12;
+}
